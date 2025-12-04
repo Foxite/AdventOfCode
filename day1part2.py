@@ -20,7 +20,7 @@ with open("day1.txt") as file:
 number = 50
 answer = 0
 for turn in turns:
-    movedFromZero = number == 0
+    # if it looks stupid but it works, it ain't stupid.
     for _ in range(abs(turn)):
         number += sign(turn)
 
